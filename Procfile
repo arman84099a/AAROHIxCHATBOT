@@ -1,1 +1,1 @@
-Aarohi: python3 main.py
+Sʜʀᴇᴇ: python3 main.py
