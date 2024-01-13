@@ -58,7 +58,7 @@
 - Install Node js by :
 `curl -fssL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 - Clone the repository by :
-`git clone https://github.com/stkeditz/Shree-Chatbot && cd Aarohi-Chatbot`
+`git clone https://github.com/stkeditz/Shree-Chatbot && cd Shree-Chatbot`
 - ᴇɴᴛᴇʀ ɪɴᴛᴏ ᴛʜᴇ ᴄʟᴏɴᴇᴅ ʀᴇᴘᴏsɪᴛᴏʀʏ ʙʏ : `cd (jese Shree-Chatbot)` jo name rakhte h
 - Install Requirements by : `pip3 install -U -r requirements.txt`
 - Filling The Vrs : `nano main.py` Fill Your Vars In `main.py` File 
@@ -110,9 +110,9 @@
 </h3>
 
 <p align="center">
-<a href="https://t.me/HONEY_SINGH_121"> <img src="https://img.shields.io/badge/Sagar-darkred?style=for-the-badge&logo=github" alt="Sagar" /> </a>
+<a href="https://t.me/Mr_Arman5"> <img src="https://img.shields.io/badge/Sagar-darkred?style=for-the-badge&logo=github" alt="Arman" /> </a>
 </p>
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-- <b> ᴠᴇʀʏ sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴀʀᴍᴀɴ](https://github.com/stkeditz) ғᴏʀ [ᴅɪʟ ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/Mr_Arman5) </b>
+- <b> ᴠᴇʀʏ sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴀʀᴍᴀɴ](https://github.com/stkeditz) ғᴏʀ [ᴀʀᴍᴀᴍ ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/Mr_Arman5) </b>
