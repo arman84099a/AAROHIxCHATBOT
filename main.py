@@ -59,7 +59,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.1)
     await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐞𝐝.✓")
     await asyncio.sleep(0.2)
-    await accha.edit("𝙷ᴇʟʟᴏ ɢᴜʏs ᴛʜɪs ɪs ❥≛⃝🥀ᴀᴀʀᴏʜɪ ᴅɪʟ ᴋɪ ᴊᴀᴀɴ』⃝⛓️❤️. ᴡʜɪᴄʜ ɪs ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏʀᴏɢʀᴀᴍ...ʏᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴀs ᴀ ᴄʜᴀᴛ ʙᴏᴛ...sᴜᴘᴘᴏʀᴛ :- @LOVE_FEELINGS_WILL ")
+    await accha.edit("𝙷ᴇʟʟᴏ ɢᴜʏs ᴛʜɪs ɪs ❥≛⃝🥀shree arman ᴋɪ ᴊᴀᴀɴ』⃝⛓️❤️. ᴡʜɪᴄʜ ɪs ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏʀᴏɢʀᴀᴍ...ʏᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴀs ᴀ ᴄʜᴀᴛ ʙᴏᴛ...sᴜᴘᴘᴏʀᴛ :- @Mr_Arman5 ")
        
 @bot.on_message(
     filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/", ".", "?", "-"])
