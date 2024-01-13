@@ -1,7 +1,7 @@
 {
-    "name": "ᴀᴀʀᴏʜɪ ᴄʜᴀᴛʙᴏᴛ",
+    "name": "sʜʀᴇᴇ ᴄʜᴀᴛʙᴏᴛ",
     "description": "ᴀ ғᴀsᴛᴇsᴛ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀᴛʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏᴛʜᴏɴ with ᴘʏʀᴏɢʀᴀᴍ ɴ ᴘʏ-ᴛɢᴄᴀʟʟs.",
-    "logo": "https://te.legra.ph/file/e4558f53c2f885ec7f209.jpg",    
+    "logo": "https://graph.org/file/380fa0a6f04e7253a9be7.jpg",    
     "env": {
         "BOT_TOKEN": {
             "description": "ʙᴏᴛ ᴛᴏᴋᴇɴ ᴏɴʟʏ",
