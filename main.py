@@ -13,7 +13,7 @@ from datetime import datetime
 API_ID = "14050586"
 API_HASH = "42a60d9c657b106370c79bb0a8ac560c"
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
-MONGO_URL = ("MONGO_URL","mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority")
+MONGO_URL = ("MONGO_URL","mongodb+srv://Arman121:Arman121@arman.ji8gqxd.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = os.environ.get("DATABASE_NAME") 
 BOT_USERNAME = os.environ.get("BOT_USERNAME")
 BOT_NAME = os.environ.get("BOT_NAME")
@@ -59,7 +59,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.1)
     await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐞𝐝.✓")
     await asyncio.sleep(0.2)
-    await accha.edit("𝙷ᴇʟʟᴏ ɢᴜʏs ᴛʜɪs ɪs ❥≛⃝🥀ᴀᴀʀᴏʜɪ ᴅɪʟ ᴋɪ ᴊᴀᴀɴ』⃝⛓️❤️. ᴡʜɪᴄʜ ɪs ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏʀᴏɢʀᴀᴍ...ʏᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴀs ᴀ ᴄʜᴀᴛ ʙᴏᴛ...sᴜᴘᴘᴏʀᴛ :- @LOVE_FEELINGS_WILL ")
+    await accha.edit("𝙷ᴇʟʟᴏ ɢᴜʏs ᴛʜɪs ɪs ❥≛⃝🥀sʜʀᴇᴇ ᴀʀᴍᴀɴ ᴋɪ ᴊᴀᴀɴ』⃝⛓️❤️. ᴡʜɪᴄʜ ɪs ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏʀᴏɢʀᴀᴍ...ʏᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴀs ᴀ ᴄʜᴀᴛ ʙᴏᴛ...sᴜᴘᴘᴏʀᴛ :- @Dil_Ka_Ehsaas ")
        
 @bot.on_message(
     filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/", ".", "?", "-"])
