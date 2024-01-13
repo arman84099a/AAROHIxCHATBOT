@@ -20,7 +20,7 @@ BOT_NAME = os.environ.get("BOT_NAME")
 ADMINS = os.environ.get("ADMINS")
 
 bot = Client(
-    "AarohiChatbot" ,
+    "SʜʀᴇᴇCʜᴀᴛBᴏᴛ" ,
     api_id = API_ID,
     api_hash = API_HASH ,
     bot_token = BOT_TOKEN
@@ -59,14 +59,14 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.1)
     await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐞𝐝.✓")
     await asyncio.sleep(0.2)
-    await accha.edit("𝙷ᴇʟʟᴏ ɢᴜʏs ᴛʜɪs ɪs ❥≛⃝🥀shree arman ᴋɪ ᴊᴀᴀɴ』⃝⛓️❤️. ᴡʜɪᴄʜ ɪs ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏʀᴏɢʀᴀᴍ...ʏᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴀs ᴀ ᴄʜᴀᴛ ʙᴏᴛ...sᴜᴘᴘᴏʀᴛ :- @Mr_Arman5 ")
+    await accha.edit("𝙷ᴇʟʟᴏ ɢᴜʏs ᴛʜɪs ɪs ❥≛⃝🥀sʜʀᴇᴇ ᴀʀᴍᴀɴ ᴋɪ ᴊᴀᴀɴ』⃝⛓️❤️. ᴡʜɪᴄʜ ɪs ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏʀᴏɢʀᴀᴍ...ʏᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴀs ᴀ ᴄʜᴀᴛ ʙᴏᴛ...sᴜᴘᴘᴏʀᴛ :- @Dil_Ka_Ehsaas ")
        
 @bot.on_message(
     filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatbotofd(client, message):
-    Aarohidb = MongoClient(MONGO_URL)    
-    aarohi = Aarohidb["AarohiDb"]["Aarohi"]     
+    Sʜʀᴇᴇdb = MongoClient(MONGO_URL)    
+    sʜʀᴇᴇ = Sʜʀᴇᴇdb["Sʜʀᴇᴇdb"]["Sʜʀᴇᴇ"]     
     if message.from_user:
         user = message.from_user.id
         chat_id = message.chat.id
@@ -76,11 +76,11 @@ async def chatbotofd(client, message):
            return await message.reply_text(
                 "You are not admin"
             )
-    is_aarohi = aarohi.find_one({"chat_id": message.chat.id})
+    is_sʜʀᴇᴇ = sʜʀᴇᴇ.find_one({"chat_id": message.chat.id})
     if not is_aarohi:
-        aarohi.insert_one({"chat_id": message.chat.id})
+        sʜʀᴇᴇ.insert_one({"chat_id": message.chat.id})
         await message.reply_text(f"Chatbot Disabled!")
-    if is_aarohi:
+    if is_sʜʀᴇᴇ:
         await message.reply_text(f"ChatBot Already Disabled")
     
 
@@ -88,8 +88,8 @@ async def chatbotofd(client, message):
     filters.command(["chatbot on", f"chatbot@{BOT_USERNAME} on"] ,prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatboton(client, message):
-    Aarohidb = MongoClient(MONGO_URL)    
-    aarohi = Aarohidb["AarohiDb"]["Aarohi"]     
+    Sʜʀᴇᴇdb = MongoClient(MONGO_URL)    
+    sʜʀᴇᴇ = Sʜʀᴇᴇdb["AarohiDb"]["Sʜʀᴇᴇ"]     
     if message.from_user:
         user = message.from_user.id
         chat_id = message.chat.id
@@ -99,11 +99,11 @@ async def chatboton(client, message):
             return await message.reply_text(
                 "You are not admin"
             )
-    is_aarohi = aarohi.find_one({"chat_id": message.chat.id})
-    if not is_aarohi:           
+    is_sʜʀᴇᴇ = sʜʀᴇᴇ.find_one({"chat_id": message.chat.id})
+    if not is_sʜʀᴇᴇ:           
         await message.reply_text(f"Chatbot Already Enabled")
-    if is_aarohi:
-        aarohi.delete_one({"chat_id": message.chat.id})
+    if is_sʜʀᴇᴇ:
+        sʜʀᴇᴇ.delete_one({"chat_id": message.chat.id})
         await message.reply_text(f"ChatBot Enabled!")
     
 
@@ -122,16 +122,16 @@ async def chatbot(client, message):
     & ~filters.private
     & ~filters.bot,
 )
-async def aarohiai(client: Client, message: Message):
+async def sʜʀᴇᴇai(client: Client, message: Message):
 
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"]   
 
    if not message.reply_to_message:
-       Aarohidb = MongoClient(MONGO_URL)
-       aarohi = Aarohidb["AarohiDb"]["Aarohi"] 
-       is_aarohi = aarohi.find_one({"chat_id": message.chat.id})
-       if not is_aarohi:
+       sʜʀᴇᴇdb = MongoClient(MONGO_URL)
+       sʜʀᴇᴇ = Sʜʀᴇᴇdb["SʜʀᴇᴇDb"]["Sʜʀᴇᴇ"] 
+       is_sʜʀᴇᴇ = sʜʀᴇᴇ.find_one({"chat_id": message.chat.id})
+       if not is_sʜʀᴇᴇ:
            await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.text})  
@@ -148,13 +148,13 @@ async def aarohiai(client: Client, message: Message):
                    await message.reply_text(f"{hey}")
    
    if message.reply_to_message:  
-       Aarohidb = MongoClient(MONGO_URL)
-       aarohi = Aarohidb["AarohiDb"]["Aarohi"] 
-       is_aarohi = aarohi.find_one({"chat_id": message.chat.id})    
+       Sʜʀᴇᴇdb = MongoClient(MONGO_URL)
+       sʜʀᴇᴇ = Sʜʀᴇᴇdb["SʜʀᴇᴇDb"]["Sʜʀᴇᴇ"] 
+       is_sʜʀᴇᴇ = sʜʀᴇᴇ.find_one({"chat_id": message.chat.id})    
        getme = await bot.get_me()
        bot_id = getme.id                             
        if message.reply_to_message.from_user.id == bot_id: 
-           if not is_aarohi:                   
+           if not is_sʜʀᴇᴇ:                   
                await bot.send_chat_action(message.chat.id, "typing")
                K = []  
                is_chat = chatai.find({"word": message.text})
@@ -188,16 +188,16 @@ async def aarohiai(client: Client, message: Message):
     & ~filters.private
     & ~filters.bot,
 )
-async def aarohistickerai(client: Client, message: Message):
+async def sʜʀᴇᴇstickerai(client: Client, message: Message):
 
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"]   
 
    if not message.reply_to_message:
-       Aarohidb = MongoClient(MONGO_URL)
-       aarohi = Aarohidb["AarohiDb"]["Aarohi"] 
-       is_aarohi = aarohi.find_one({"chat_id": message.chat.id})
-       if not is_aarohi:
+       Sʜʀᴇᴇdb = MongoClient(MONGO_URL)
+       sʜʀᴇᴇ = Sʜʀᴇᴇdb["SʜʀᴇᴇDb"]["Sʜʀᴇᴇ"] 
+       is_sʜʀᴇᴇ = sʜʀᴇᴇ.find_one({"chat_id": message.chat.id})
+       if not is_sʜʀᴇᴇ:
            await bot.send_chat_action(message.chat.id, "typing")
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})      
@@ -214,13 +214,13 @@ async def aarohistickerai(client: Client, message: Message):
                    await message.reply_sticker(f"{hey}")
    
    if message.reply_to_message:
-       Aarohidb = MongoClient(MONGO_URL)
-       aarohi = Aarohidb["AarohiDb"]["Aarohi"] 
-       is_aarohi = aarohi.find_one({"chat_id": message.chat.id})
+       Sʜʀᴇᴇdb = MongoClient(MONGO_URL)
+       sʜʀᴇᴇ = Sʜʀᴇᴇdb["SʜʀᴇᴇDb"]["Sʜʀᴇᴇ"] 
+       is_sʜʀᴇᴡ = sʜʀᴇᴇ.find_one({"chat_id": message.chat.id})
        getme = await bot.get_me()
        bot_id = getme.id
        if message.reply_to_message.from_user.id == bot_id: 
-           if not is_aarohi:                    
+           if not is_sʜʀᴇᴇ:                    
                await bot.send_chat_action(message.chat.id, "typing")
                K = []  
                is_chat = chatai.find({"word": message.text})
@@ -255,7 +255,7 @@ async def aarohistickerai(client: Client, message: Message):
     & filters.private
     & ~filters.bot,
 )
-async def aarohiprivate(client: Client, message: Message):
+async def sʜʀᴇᴇprivate(client: Client, message: Message):
 
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"]
@@ -298,7 +298,7 @@ async def aarohiprivate(client: Client, message: Message):
     & filters.private
     & ~filters.bot,
 )
-async def aarohiprivatesticker(client: Client, message: Message):
+async def sʜʀᴇᴇprivatesticker(client: Client, message: Message):
 
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"] 
@@ -332,5 +332,5 @@ async def aarohiprivatesticker(client: Client, message: Message):
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
 
-print(f"❣️𝗔𝗔𝗥𝗢𝗛𝗜 𝗖𝗛𝗔𝗧𝗕𝗢𝗧💝𝗜𝗦 𝗦𝗧𝗔𝗥𝗧𝗘𝗗❣️ ")      
+print(f"❣️𝗦𝗛𝗥𝗘𝗘 𝗖𝗛𝗔𝗧𝗕𝗢𝗧💝𝗜𝗦 𝗦𝗧𝗔𝗥𝗧𝗘𝗗❣️ ")      
 bot.run()
